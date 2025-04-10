@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+body {
+  background-color: #262833;
+  font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"; 
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+p {
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  font-size: 15px;
+}
+	
+	p {color: #FFFFFF;
+	text-align: center;	
+}
+
+img {
+  width: 100%;
+  height: auto;
+	object-fit: cover;
+}
+	
+#rcorners2 {
+  flex-grow:1;
+  border-radius: 7px 7px 7px;
+  background: #FFFFFF;
+  font: #18d777;
+  align-content:center;
+  padding: 35px;	
+  width: 92%;
+  height: auto; 
+}
+
+	
+	nav ul {
+		list-style-type: none;
+		border-radius: 7px 7px 7px;
+		margin: 0px; 
+		padding:0px;
+		overflow:hidden;
+		background-color:#18d777;
+	}
+	
+	nav li {
+		float: right;
+	}
+	
+	nav li a{
+		display:incline-block;
+		color:#ffffff;
+		text-align:center;
+		padding:14px 16px;
+		text-decoration:none;
+	}
+	
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+			text-align:center;
+			font: #18d777;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .menu, .cta, .hero {
+			flex-grow:1;
+            background: #18d777;
+            color: #262833;
+            padding: 20px;
+            border-radius: 7px;
+            width: 30%;
+            box-sizing: border-box;
+			margin: 10px; 
+			
+        }
+        footer {
+            background: #18d777;
+            padding: 10px;
+            border-radius: 7px;
+            color: #ffffff;
+        }
+	
+        @media (max-width: 768px) {
+            .menu, .cta, .hero {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+			
+        }
+        @media (max-width: 480px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+            }
+            nav li {
+                float: none;
+            }
+            nav li a {
+                padding: 10px;
+			}
+		
