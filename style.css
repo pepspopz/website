@@ -7,6 +7,13 @@ body {
   font-style: normal;
 }
 
+header {
+	flex-grow:1;
+	display:block;
+	align-content: flex-start;
+	
+}
+
 h1 {
   color: #FFFFFF;
   text-align: center;
@@ -21,11 +28,11 @@ p {
 	text-align: center;	
 }
 
-img {
+/*img {
   width: 100%;
   height: auto;
 	object-fit: cover;
-}
+}*/
 	
 #rcorners2 {
   flex-grow:1;
@@ -68,7 +75,7 @@ img {
             justify-content: space-between;
             padding: 20px;
         }
-        .menu, .cta, .hero {
+        .menu, .cta, .hero, .wide {
 			flex-grow:1;
             background: #18d777;
             color: #262833;
@@ -85,6 +92,17 @@ img {
             border-radius: 7px;
             color: #ffffff;
         }
+.flex-column div{
+				width: 100%;
+			}
+			
+			.narrow{
+				flex-grow: 1;
+			}
+			.wide{
+				flex-grow: 2;
+				margin-left: 29px;
+			}
 	
         @media (max-width: 768px) {
             .menu, .cta, .hero {
@@ -94,7 +112,10 @@ img {
 			
         }
         @media (max-width: 480px) {
-            nav ul {
+			.container{
+				flex-direction: column;
+			}
+			nav ul {
                 display: flex;
                 flex-direction: column;
             }
@@ -103,5 +124,11 @@ img {
             }
             nav li a {
                 padding: 10px;
+			}}
+			
+			.flex-column{
+				display: flex;
+				flex-direction: column;
+				
 			}
-		
+			
