@@ -9,7 +9,6 @@ body {
 
 header {
 	flex-grow:1;
-	display:block;
 }
 
 h1 {
